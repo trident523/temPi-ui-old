@@ -1,7 +1,163 @@
 extends layout
 
+
 block content
-  h1= title
-  p Welcome to #{title}
-  p This is a test
-  p still updating?
+  nav.white(role='navigation')
+      .nav-wrapper.container
+          a#logo-container.brand-logo(href='#') Logo
+          |       
+          ul.right.hide-on-med-and-down
+            li
+              a(href='#') Navbar Link
+          |       
+          ul#nav-mobile.side-nav(style='left: -250px;')
+            li
+              a(href='#') Navbar Link
+          |       
+          a.button-collapse(href='#', data-activates='nav-mobile')
+            i.mdi-navigation-menu
+      |   
+      #index-banner.parallax-container
+        .section.no-pad-bot
+          .container
+            br
+            br
+            |         
+            h1.header.center.teal-text.text-lighten-2 temPirature
+            |         
+            .row.center
+              h5.header.col.s12.light Just another cloud based ajaxified postgres tool, made with love in Rochester
+            |         
+            .row.center
+              a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='#') Get Started
+            |         
+            br
+            br
+        |     
+        .parallax
+          img(src='background1.jpg', alt='Unsplashed background img 2', style='display: block; transform: translate3d(-50%, 271px, 0px);')
+      |   
+      .container
+        .section
+          // Icon Section
+          .row
+            .col.s12.m4
+              .icon-block
+                h2.center.brown-text
+                  i.mdi-action-face-unlock
+                |             
+                h5.center It's cool!
+                |             
+                p.light
+                  | Trust fund four loko cold-pressed gastropub lumbersexual. Kitsch locavore squid mumblecore, actually keffiyeh lomo twee Vice retro master cleanse 8-bit banjo. Umami craft beer migas, semiotics Banksy selvage cardigan XOXO pickled direct trade messenger bag twee hella Odd Future pour-over. Marfa salvia kitsch vegan, street art direct trade fashion axe wolf fap heirloom flannel synth hashtag. Semiotics cliche flannel, PBR&B cold-pressed four loko Truffaut bicycle rights try-hard beard. Brooklyn 8-bit Pinterest, gentrify biodiesel Odd Future PBR pug flannel taxidermy disrupt ethical bitters cold-pressed listicle. Heirloom Williamsburg Tumblr cornhole.
+            |         
+            .col.s12.m4
+              .icon-block
+                h2.center.brown-text
+                  i.mdi-social-group
+                |             
+                h5.center User Experience Focused
+                |             
+                p.light
+                  | Cornhole Thundercats fixie cliche Brooklyn, sartorial meditation. Locavore Echo Park aesthetic, post-ironic irony messenger bag small batch four loko kogi Carles ennui hashtag. Master cleanse lumbersexual narwhal, gentrify quinoa pork belly Intelligentsia post-ironic you probably haven't heard of them DIY flexitarian authentic. Before they sold out keffiyeh Banksy XOXO beard retro. Leggings seitan hoodie Pinterest deep v keffiyeh cred, lumbersexual McSweeney's wolf church-key keytar. Jean shorts PBR mlkshk fashion axe. Stumptown vegan messenger bag small batch umami.
+            |         
+            .col.s12.m4
+              .icon-block
+                h2.center.brown-text
+                  i.mdi-action-settings
+                |             
+                h5.center Easy to work with
+                |             
+                p.light
+                  | +1 viral craft beer, master cleanse occupy kogi typewriter meditation church-key lo-fi cronut normcore ennui single-origin coffee tofu. Williamsburg keytar Pitchfork, +1 mumblecore pop-up 8-bit asymmetrical Shoreditch. Roof party tilde Bushwick, Williamsburg lo-fi 3 wolf moon ennui you probably haven't heard of them Shoreditch kogi skateboard Godard hella flexitarian. Authentic organic lumbersexual, hella fixie gastropub cardigan fashion axe direct trade Neutra cliche locavore wayfarers. Post-ironic beard mlkshk ethical lo-fi, High Life pork belly meh. Neutra Tumblr butcher, sustainable cray four dollar toast banh mi mixtape PBR banjo fanny pack Marfa cliche. Mumblecore tousled direct trade synth kale chips four dollar toast.
+      |   
+      .parallax-container.valign-wrapper
+        .section.no-pad-bot
+          .container
+            .row.center
+              h5.header.col.s12.light Backed by YC, our office is on the golden gate bridge.
+        |     
+        .parallax
+          img(src='background3.jpg', alt='Unsplashed background img 2', style='display: block; transform: translate3d(-50%, 25px, 0px);')
+      |   
+      .container
+        .section
+          .row
+            .col.s12.center
+              h3
+                i.mdi-content-send.brown-text
+              |           
+              h4 Contact Us
+              |           
+              p.left-align.light
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+      |   
+      .parallax-container.valign-wrapper
+        .section.no-pad-bot
+          .container
+            .row.center
+              h5.header.col.s12.light  
+        |     
+        .parallax
+          img(src='background2.jpg', alt='Unsplashed background img 3', style='display: block;')
+      |   
+      footer.page-footer.teal
+        .container
+          .row
+            .col.l6.s12
+              h5.white-text Company Bio
+              |           
+              p.grey-text.text-lighten-4
+                | We are a team of college students working on this project like it&apos;s our full time job. Any amount would help support and continue development on this project and is greatly appreciated. <-- actual text in this template.
+            |         
+            .col.l3.s12
+              h5.white-text Settings
+              |           
+              ul
+                li
+                  a.white-text(href='#!') Link 1
+                |             
+                li
+                  a.white-text(href='#!') Link 2
+                |             
+                li
+                  a.white-text(href='#!') Link 3
+                |             
+                li
+                  a.white-text(href='#!') Link 4
+            |         
+            .col.l3.s12
+              h5.white-text Connect
+              |           
+              ul
+                li
+                  a.white-text(href='#!') Link 1
+                |             
+                li
+                  a.white-text(href='#!') Link 2
+                |             
+                li
+                  a.white-text(href='#!') Link 3
+                |             
+                li
+                  a.white-text(href='#!') Link 4
+        |     
+        .footer-copyright
+          .container
+            | Powered so far by 
+            a.brown-text.text-lighten-3(href='http://materializecss.com') Materialize
+      // Scripts
+      script.
+        (function($){
+          $(function(){
+
+          $('.button-collapse').sideNav();
+        $('.parallax').parallax();
+
+        }); // end of document ready
+        })(jQuery); // end of jQuery name space
+
+      .hiddendiv.common
+      .drag-target(style='left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);')
+  
+

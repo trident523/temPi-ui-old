@@ -2,6 +2,11 @@ doctype html
 html
   head
     title= title
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css')
+    // Compiled and minified JavaScript
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
